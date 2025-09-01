@@ -1,0 +1,28 @@
+{
+  "name": "gitlab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "tsc && node ./build/GetProjectsIds.js",
+    "clean": "rimraf build",
+    "prebuild": "rimraf build",
+    "prewatch": "rimraf build"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@gitbeaker/rest": "^39.27.1",
+    "@types/node": "18.16.0",
+    "prettier": "^3.1.1",
+    "rimraf": "^5.0.5",
+    "simple-git": "^3.22.0",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "5.3.3"
+  },
+  "author": "",
+  "license": "ISC"
+}
